@@ -1,0 +1,35 @@
+/* задаємо задній фон всього сайту */
+body {
+  background-color: #040404;
+}
+
+.icons-list {
+  /* позиціонуємо елементи списку по горизонталі */
+  display: flex;
+  gap: 21px; /* задаємо відступи між елементами списку */
+  justify-content: center; /* відцентровуємо по горизонталі */
+  /* відцентровуємо по вертикалі */
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.contact-item {
+  /* прибираємо крапку для елементу вписку */
+  list-style: none;
+  /* задній фон елементу списку */
+  background-color: #b4b4b4;
+  /* закруглюємо краї елементу списку, робимо коло */
+  border-radius: 50%;
+  /* відступи всередині кола */
+  padding: 18px 21px;
+}
+
+/* робимо анімацію при наведенні */
+.contact-item:hover {
+  background-color: #fff;
+  /* спочатку показуємо, що буде змінюватись */
+  box-shadow: 0 0 21px 20px rgba(225, 225, 225, 0.5);
+  /* задаємо анімації час та тип анімації */
+  transition: box-shadow 250ms ease-in-out 150ms,
+    background-color 250ms ease-in-out 150ms;
+}
